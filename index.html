@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melina Pereda | Redatora publicitária & Estrategista de tráfego pago | 12 Anos</title>
+    <meta name="description" content="Melina Pereda - Redatora publicitária/copywriter há 12 anos e estrategista de tráfego pago há 6 anos. Especializada em criar estratégias de conteúdo que convertem e campanhas de tráfego pago que geram resultados acima da média.">
+    <meta name="keywords" content="redatora publicitária, copywriter, estrategista de tráfego pago, marketing digital, criação de conteúdo, campanhas pagas, conversão, ROI">
+    <meta name="author" content="Melina Pereda">
+    
+    <!-- Fontes e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+    /* ==========================================
+       VARIAVEIS E CONFIGURAÇÕES GLOBAIS
+       ========================================== */
+    :root {
+        --primary-color: #1a1a1a;
+        --secondary-color: #2d2d2d;
+        --accent-color: #d4af37;
+        --text-color: #e0e0e0;
+        --text-light: #a0a0a0;
+        --bg-color: #0a0a0a;
+        --bg-secondary: #151515;
+        --border-color: #333;
+        --success-color: #4caf50;
+        --error-color: #f44336;
+        
+        --font-primary: 'Inter', sans-serif;
+        --font-display: 'Playfair Display', serif;
+        --font-mono: 'JetBrains Mono', monospace;
+        
+        --spacing-xs: 0.5rem;
+        --spacing-sm: 1rem;
+        --spacing-md: 2rem;
+        --spacing-lg: 3rem;
+        --spacing-xl: 4rem;
+        --spacing-xxl: 6rem;
+        
+        --border-radius: 8px;
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ==========================================
+       RESET E ESTILOS GLOBAIS
+       ========================================== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+    }
+
+    body {
+        font-family: var(--font-primary);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    /* ==========================================
+       TIPOGRAFIA
+       ========================================== */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-display);
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 300;
+    }
+
+    h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    h3 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    p {
+        margin-bottom: var(--spacing-sm);
+        color: var(--text-light);
+    }
+
+    a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    a:hover {
+        color: var(--text-color);
+    }
+
+    /* ==========================================
+       LAYOUT E CONTAINERS
+       ========================================== */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--spacing-md);
+    }
+
+    .section {
+        padding: var(--spacing-xxl) 0;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .section-title h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .section-title h2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: var(--accent-color);
+    }
+
+    .section-title p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    /* ==========================================
+       NAVEGAÇÃO
+       ========================================== */
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: var(--spacing-sm) 0;
+        transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+        background: rgba(10, 10, 10, 0.98);
+        box-shadow: var(--shadow);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--spacing-md);
+    }
+
+    .logo {
+        font-family: var(--font-display);
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: var(--text-color);
+    }
+
+    .logo span {
+        color: var(--accent-color);
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: var(--spacing-lg);
+    }
+
+    .nav-link {
+        color: var(--text-color);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        transition: var(--transition);
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-color);
+        transition: var(--transition);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: var(--text-color);
+        margin: 3px 0;
+        transition: var(--transition);
+    }
+
+    /* ==========================================
+       HERO SECTION
+       ========================================== */
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, var(--bg-color) 0%, var(--secondary-color) 100%);
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23333" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        opacity: 0.3;
+    }
+
+    .hero::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background: linear-gradient(to top, var(--bg-color), transparent);
+        pointer-events: none;
+    }
+
+    .hero-content {
+        text-align: center;
+        z-index: 2;
+        max-width: 800px;
+        padding: 0 var(--spacing-md);
+    }
+
+    .hero h1 {
+        margin-bottom: var(--spacing-md);
+        opacity: 0;
+        animation: fadeInUp 1s ease-out 0.5s forwards;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-md);
+        opacity: 0;
+        animation: fadeInUp 1s ease-out 0.7s forwards;
+    }
+
+    .hero-stat {
+        font-size: 1rem;
+        color: var(--text-light);
+        margin-bottom: var(--spacing-lg);
+        opacity: 0;
+        animation: fadeInUp 1s ease-out 0.9s forwards;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: var(--spacing-md);
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        animation: fadeInUp 1s ease-out 1.1s forwards;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: var(--border-radius);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: var(--transition);
+        cursor: pointer;
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        background: var(--accent-color);
+        color: var(--primary-color);
+    }
+
+    .btn-primary:hover {
+        background: #c9a42e;
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+    }
+
+    .btn-secondary {
+        background: transparent;
+        color: var(--text-color);
+        border: 2px solid var(--accent-color);
+    }
+
+    .btn-secondary:hover {
+        background: var(--accent-color);
+        color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    .scroll-indicator {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: bounce 2s infinite;
+    }
+
+    /* ==========================================
+       ABOUT SECTION
+       ========================================== */
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: var(--spacing-xl);
+        align-items: start;
+    }
+
+    .about-image {
+        position: relative;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+
+    .about-image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, var(--accent-color), transparent);
+        opacity: 0.1;
+    }
+
+    .about-text h3 {
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .experience-counter {
+        display: flex;
+        gap: var(--spacing-lg);
+        margin: var(--spacing-lg) 0;
+    }
+
+    .counter-item {
+        text-align: center;
+    }
+
+    .counter-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--accent-color);
+        display: block;
+    }
+
+    .counter-label {
+        font-size: 0.9rem;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .credentials-showcase {
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
+        border-top: 1px solid var(--border-color);
+    }
+
+    .credentials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-md);
+    }
+
+    .credential-badge {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 15px;
+        background: var(--bg-secondary);
+        border: 1px solid var(--accent-color);
+        border-radius: var(--border-radius);
+        font-size: 0.85rem;
+    }
+
+    .credential-badge i {
+        color: var(--accent-color);
+    }
+
+    /* ==========================================
+       SERVICES SECTION
+       ========================================== */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .service-card {
+        background: var(--bg-secondary);
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border-color);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+        transition: left 0.5s;
+    }
+
+    .service-card:hover::before {
+        left: 100%;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-hover);
+        border-color: var(--accent-color);
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .service-card h3 {
+        margin-bottom: var(--spacing-xs);
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* ==========================================
+       PORTFOLIO SECTION
+       ========================================== */
+    .portfolio-filters {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-xl);
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        padding: 8px 20px;
+        background: rgba(45, 45, 45, 0.5);
+        border: 2px solid var(--border-color);
+        color: var(--text-light);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: var(--transition);
+        font-size: 0.9rem;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+        background: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--primary-color);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--spacing-lg);
+    }
+
+    .portfolio-item {
+        background: var(--bg-secondary);
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        position: relative;
+    }
+
+    .portfolio-item:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .portfolio-image {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+        background: #2d2d2d;
+    }
+
+    .portfolio-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+    }
+
+    .portfolio-item:hover .portfolio-image {
+        background: var(--accent-color);
+    }
+
+    .portfolio-item:hover .portfolio-image img {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+    }
+
+    .portfolio-content {
+        padding: var(--spacing-lg);
+    }
+
+    .portfolio-content h3 {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .portfolio-category {
+        display: inline-block;
+        background: rgba(45, 45, 45, 0.8);
+        color: var(--accent-color);
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: var(--spacing-sm);
+        transition: var(--transition);
+    }
+
+    .portfolio-item:hover .portfolio-category {
+        background: var(--accent-color);
+        color: var(--primary-color);
+    }
+
+    .portfolio-metrics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-md);
+        padding-top: var(--spacing-md);
+        border-top: 1px solid var(--border-color);
+    }
+
+    .metric-item {
+        text-align: center;
+        padding: var(--spacing-xs);
+        background: rgba(212, 175, 55, 0.05);
+        border-radius: var(--border-radius);
+        transition: var(--transition);
+    }
+
+    .portfolio-item:hover .metric-item {
+        background: rgba(212, 175, 55, 0.1);
+    }
+
+    .metric-value {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--accent-color);
+    }
+
+    .metric-label {
+        font-size: 0.8rem;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .btn-case-study {
+        display: inline-block;
+        margin-top: var(--spacing-sm);
+        padding: 8px 20px;
+        background: rgba(212, 175, 55, 0.1);
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: var(--transition);
+        font-size: 0.85rem;
+    }
+
+    .btn-case-study:hover {
+        background: var(--accent-color);
+        color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    .btn-case-study i {
+        margin-right: 5px;
+    }
+
+    /* ==========================================
+       CONTACT SECTION
+       ========================================== */
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--bg-secondary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent-color);
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 12px;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-color);
+        font-family: var(--font-primary);
+        transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .form-status {
+        padding: var(--spacing-sm);
+        border-radius: var(--border-radius);
+        margin-top: var(--spacing-sm);
+        display: none;
+    }
+
+    .form-status.success {
+        background: rgba(76, 175, 80, 0.1);
+        color: var(--success-color);
+        border: 1px solid var(--success-color);
+    }
+
+    .form-status.error {
+        background: rgba(244, 67, 54, 0.1);
+        color: var(--error-color);
+        border: 1px solid var(--error-color);
+    }
+
+    /* ==========================================
+       FOOTER
+       ========================================== */
+    .footer {
+        background: var(--bg-secondary);
+        padding: var(--spacing-xl) 0 var(--spacing-md);
+        border-top: 1px solid var(--border-color);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-xl);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .footer-section h3 {
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .footer-section p,
+    .footer-section a {
+        color: var(--text-light);
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .social-links {
+        display: flex;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-md);
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        background: var(--bg-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        transition: var(--transition);
+    }
+
+    .social-link:hover {
+        background: var(--accent-color);
+        color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: var(--spacing-md);
+        border-top: 1px solid var(--border-color);
+        color: var(--text-light);
+    }
+
+    /* ==========================================
+       MODAL CASE STUDY
+       ========================================== */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(5px);
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        padding: var(--spacing-md);
+    }
+
+    .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal-container {
+        background: var(--bg-secondary);
+        border: 1px solid var(--accent-color);
+        border-radius: var(--border-radius);
+        max-width: 900px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        transform: scale(0.9) translateY(20px);
+        transition: all 0.3s ease;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-overlay.active .modal-container {
+        transform: scale(1) translateY(0);
+    }
+
+    .modal-header {
+        position: sticky;
+        top: 0;
+        background: var(--bg-color);
+        padding: var(--spacing-md);
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .modal-close {
+        background: transparent;
+        border: 2px solid var(--accent-color);
+        color: var(--accent-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+    }
+
+    .modal-close:hover {
+        background: var(--accent-color);
+        color: var(--primary-color);
+        transform: rotate(90deg);
+    }
+
+    .modal-content-case {
+        padding: var(--spacing-lg);
+    }
+
+    .modal-content-case h2 {
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-lg);
+        font-size: 1.8rem;
+    }
+
+    .case-section {
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .case-section:last-child {
+        border-bottom: none;
+    }
+
+    .case-section h3 {
+        color: var(--text-color);
+        margin-bottom: var(--spacing-md);
+        font-size: 1.3rem;
+    }
+
+    .case-section ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .case-section ul li {
+        padding: var(--spacing-xs) 0;
+        padding-left: 30px;
+        position: relative;
+        color: var(--text-light);
+        line-height: 1.8;
+    }
+
+    .case-section ul li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--accent-color);
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .results-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-md);
+    }
+
+    .result-item {
+        background: rgba(212, 175, 55, 0.05);
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+        text-align: center;
+        border: 1px solid var(--border-color);
+        transition: var(--transition);
+    }
+
+    .result-item:hover {
+        background: rgba(212, 175, 55, 0.1);
+        border-color: var(--accent-color);
+        transform: translateY(-2px);
+    }
+
+    .result-number {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .result-label {
+        display: block;
+        font-size: 0.9rem;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .case-section p {
+        margin-bottom: var(--spacing-sm);
+        line-height: 1.8;
+    }
+
+    .case-section p strong {
+        color: var(--accent-color);
+    }
+
+    /* ==========================================
+       ANIMAÇÕES
+       ========================================== */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateX(-50%) translateY(0);
+        }
+        40% {
+            transform: translateX(-50%) translateY(-10px);
+        }
+        60% {
+            transform: translateX(-50%) translateY(-5px);
+        }
+    }
+
+    @keyframes pulse-whatsapp {
+        0%, 100% {
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        }
+        50% {
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7);
+        }
+    }
+
+    /* ==========================================
+       RESPONSIVE DESIGN
+       ========================================== */
+    @media (max-width: 1024px) {
+        .services-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hamburger {
+            display: flex;
+        }
+        
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            flex-direction: column;
+            background: var(--bg-color);
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: var(--shadow);
+            padding: var(--spacing-md) 0;
+        }
+        
+        .nav-menu.active {
+            left: 0;
+        }
+        
+        .nav-link {
+            padding: var(--spacing-sm);
+            display: block;
+        }
+        
+        .hero-content {
+            padding: 0 var(--spacing-sm);
+        }
+        
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .about-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        
+        .contact-content {
+            grid-template-columns: 1fr;
+        }
+        
+        .portfolio-filters {
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding-bottom: var(--spacing-sm);
+        }
+        
+        .experience-counter {
+            justify-content: center;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .modal-container {
+            max-height: 95vh;
+        }
+
+        .modal-content-case {
+            padding: var(--spacing-md);
+        }
+
+        .results-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 480px) {
+        :root {
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-xxl: 3rem;
+        }
+        
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* ==========================================
+       UTILITÁRIOS
+       ========================================== */
+    .text-center {
+        text-align: center;
+    }
+
+    .text-accent {
+        color: var(--accent-color);
+    }
+
+    .mb-0 {
+        margin-bottom: 0;
+    }
+
+    .mt-0 {
+        margin-top: 0;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: var(--accent-color);
+        z-index: 9999;
+        transition: width 0.1s ease-out;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: var(--accent-color);
+        color: var(--primary-color);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+        font-size: 1.2rem;
+    }
+
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .back-to-top:hover {
+        background: #c9a42e;
+        transform: translateY(-3px);
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 90px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: #25D366;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        z-index: 998;
+        transition: all 0.3s ease;
+        animation: pulse-whatsapp 2s infinite;
+    }
+
+    .whatsapp-float:hover {
+        background: #20BA5A;
+        transform: scale(1.1);
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Melina <span>Pereda</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+   Continuando com o HTML do body:
+html<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Melina <span>Pereda</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Transformo Palavras em <span class="text-accent">ROI</span></h1>
+        <p class="hero-subtitle">Redatora publicitária há 12 anos | Estrategista de tráfego pago há 6 anos</p>
+        <p class="hero-stat">Mais de 500 campanhas criadas • ROI médio de 85%+ • Atuação nacional e internacional</p>
+        <div class="cta-buttons">
+            <a href="#portfolio" class="btn btn-primary">Ver portfólio</a>
+            <a href="https://wa.me/5548999867086?text=Olá%20Melina!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento." class="btn btn-secondary" target="_blank">Fazer orçamento</a>
+        </div>
+        
+        <!-- Redes Sociais no Hero -->
+        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; opacity: 0; animation: fadeInUp 1s ease-out 1.3s forwards;">
+            <a href="https://www.linkedin.com/in/melinna-pereda-63b9a9336/" target="_blank" rel="noopener noreferrer" style="width: 45px; height: 45px; background: rgba(212, 175, 55, 0.1); border: 2px solid var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.2rem; transition: all 0.3s ease;" onmouseover="this.style.background='var(--accent-color)'; this.style.color='var(--primary-color)'; this.style.transform='translateY(-3px)'" onmouseout="this.style.background='rgba(212, 175, 55, 0.1)'; this.style.color='var(--accent-color)'; this.style.transform='translateY(0)'">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/melinnapereda/" target="_blank" rel="noopener noreferrer" style="width: 45px; height: 45px; background: rgba(212, 175, 55, 0.1); border: 2px solid var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.2rem; transition: all 0.3s ease;" onmouseover="this.style.background='var(--accent-color)'; this.style.color='var(--primary-color)'; this.style.transform='translateY(-3px)'" onmouseout="this.style.background='rgba(212, 175, 55, 0.1)'; this.style.color='var(--accent-color)'; this.style.transform='translateY(0)'">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100087678501984" target="_blank" rel="noopener noreferrer" style="width: 45px; height: 45px; background: rgba(212, 175, 55, 0.1); border: 2px solid var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.2rem; transition: all 0.3s ease;" onmouseover="this.style.background='var(--accent-color)'; this.style.color='var(--primary-color)'; this.style.transform='translateY(-3px)'" onmouseout="this.style.background='rgba(212, 175, 55, 0.1)'; this.style.color='var(--accent-color)'; this.style.transform='translateY(0)'">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre mim</h2>
+                <p>Conheça minha trajetória e experiência profissional</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://i.ibb.co/rGZVDLnN/82ae18c5-39dc-451a-98da-c62bae96bcff.png" alt="Melina Pereda - Redatora Publicitária e Estrategista de Tráfego Pago">
+                </div>
+                <div class="about-text">
+                    <h3>12 Anos transformando palavras em resultados</h3>
+                    <p>
+                        Sou redatora publicitária há 12 anos e estrategista de tráfego pago há 6 anos. 
+                        Minha jornada começou no compartilhamento de artigos informativos, mas foi na criação de conteúdo digital voltado à conversão que encontrei 
+                        minha verdadeira paixão.
+                    </p>
+                    <p>
+                        Além de colecionar certificações e diplomas nesse nicho, especializei-me em criar campanhas que não apenas atraem cliques, mas geram 
+                        conversões reais. Meu foco está em entender o comportamento do consumidor e 
+                        transformar esses insights em estratégias que geram ROI, seja mediante conteúdos focados em tráfego orgânico, seja em campanhas de tráfego pago.
+                    </p>
+                    <div class="experience-counter">
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="12">0</span>
+                            <span class="counter-label">Anos de Experiência</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="+2000">0</span>
+                            <span class="counter-label">Peças desenvolvidas</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-target="85">0</span>
+                            <span class="counter-label">% Médio de ROI</span>
+                        </div>
+                    </div>
+                    <div class="credentials-showcase">
+                        <h4>Certificações & Especializações</h4>
+                        <div class="credentials-grid">
+                            <div class="credential-badge">
+                                <i class="fas fa-certificate"></i>
+                                <span>Google Ads Certified</span>
+                            </div>
+                            <div class="credential-badge">
+                                <i class="fas fa-certificate"></i>
+                                <span>Meta Blueprint Certified</span>
+                            </div>
+                            <div class="credential-badge">
+                                <i class="fas fa-certificate"></i>
+                                <span>Copywriting Avançado</span>
+                            </div>
+                            <div class="credential-badge">
+                                <i class="fas fa-certificate"></i>
+                                <span>Análise de Dados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Serviços</h2>
+                <p>O que posso fazer pelo seu negócio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Copywriting</h3>
+                    <p>Criação de textos persuasivos para campanhas, landing pages, emails e anúncios que convertem visitantes em clientes.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Gestão de tráfego pago</h3>
+                    <p>Criação e gestão de campanhas no Google Ads e Meta Ads com foco em alto poder de conversão.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Estratégia de conteúdo</h3>
+                    <p>Desenvolvimento de estratégias de conteúdo que educam, engajam e convertem seu público-alvo.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Gestão de redes sociais</h3>
+                    <p>Planejamento e execução de estratégias para Instagram, Facebook, LinkedIn e TikTok com foco em engajamento e conversão.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Otimização de campanhas</h3>
+                    <p>Análise e otimização de páginas de captura e funis de vendas para maximizar taxa de conversão.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email marketing</h3>
+                    <p>Criação de sequências de email marketing que nutrem leads e aumentam as vendas de seus produtos/serviços.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Materiais ricos</h3>
+                    <p>Criação de e-books, whitepapers, infográficos, roteiros de vídeo e outros formatos de conteúdo.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análise de dados</h3>
+                    <p>Monitoramento e análise de métricas para tomada de decisões baseadas em dados reais de performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfólio</h2>
+                <p>Conheça meus trabalhos de copywriting e conteúdo</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="copywriting">Copywriting</button>
+                <button class="filter-btn" data-filter="artigos">Artigos</button>
+                <button class="filter-btn" data-filter="blog">Blog</button>
+                <button class="filter-btn" data-filter="saude">Saúde</button>
+                <button class="filter-btn" data-filter="tecnologia">Tecnologia</button>
+                <button class="filter-btn" data-filter="financas">Finanças</button>
+                <button class="filter-btn" data-filter="imoveis">Imóveis</button>
+                <button class="filter-btn" data-filter="email">Email Marketing</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Conteúdo 1 - Artigo IA e produtividade -->
+                <div class="portfolio-item fade-in" data-category="artigos tecnologia blog">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='16' font-weight='600'%3EFerramentas de IA%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='14'%3Epara Produtividade%3C/text%3E%3C/svg%3E" alt="Ferramentas de IA para Produtividade">
+                        <div class="portfolio-overlay">
+                            <a href="https://49748638.hs-sites.com/blog/ferramentas-de-ia-para-produtividade-quais-realmente-valem-a-pena" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ler Artigo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Artigo • Blog • Tecnologia</span>
+                        <h3>Ferramentas de IA para produtividade: quais realmente valem a pena?</h3>
+                        <p>Artigo comparativo analisando as principais ferramentas de inteligência artificial disponíveis no mercado, com foco em produtividade empresarial. Segundo pesquisa da McKinsey (2024), empresas que adotam IA aumentam produtividade em até 40%.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">6min</span>
+                                <span class="metric-label">Tempo Leitura</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">68%</span>
+                                <span class="metric-label">Taxa leitura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conteúdo 2 - Artigo segurança de dados -->
+                <div class="portfolio-item fade-in" data-category="artigos tecnologia blog">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='16' font-weight='600'%3ESegurança dos Dados%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='14'%3Eem 2025%3C/text%3E%3C/svg%3E" alt="Segurança dos dados em 2025">
+                        <div class="portfolio-overlay">
+                            <a href="https://49748638.hs-sites.com/blog/seguran%C3%A7a-dos-dados-em-2025-proteja-se-em-um-mundo-hiperconectado" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ler Artigo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Artigo • Blog • Tecnologia</span>
+                        <h3>Segurança dos dados em 2025: proteja-se em um mundo Hiperconectado</h3>
+                        <p>Conteúdo educativo sobre proteção de dados. Dados da IBM (2024) indicam que violações de dados custam em média US$ 4,45 milhões por incidente. 83% das organizações sofreram mais de uma violação de dados.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">7min</span>
+                                <span class="metric-label">Tempo Leitura</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">72%</span>
+                                <span class="metric-label">Taxa leitura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conteúdo 3 - Copy clínica de cirurgia plástica -->
+                <div class="portfolio-item fade-in" data-category="copywriting saude">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='42%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='15' font-weight='600'%3EAbdominoplastia%3C/text%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='13'%3EPós-Bariátrica%3C/text%3E%3Ctext x='50%25' y='62%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='11'%3ERecupere sua Autoestima%3C/text%3E%3C/svg%3E" alt="Abdominoplastia Pós-Bariátrica">
+                        <div class="portfolio-overlay">
+                            <a href="https://49748638.hs-sites.com/blog/recupere-sua-autoestima-com-abdominoplastia-p%C3%B3s-bari%C3%A1trica" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Conteúdo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Copywriting • Saúde</span>
+                        <h3>Recupere sua autoestima com abdominoplastia pós-bariátrica</h3>
+                        <p>Copy persuasiva para clínica de cirurgia plástica. SBCP (2024) aponta crescimento de 23% em procedimentos pós-bariátricos. 78% dos pacientes relatam melhora significativa na qualidade de vida após cirurgia reparadora.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">4.2%</span>
+                                <span class="metric-label">Taxa conversão</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">78%</span>
+                                <span class="metric-label">Taxa Leitura</span>
+                            </div>
+                        </div>
+                        <button class="btn-case-study" data-case="abdominoplastia">
+                            <i class="fas fa-chart-line"></i> Ver Case Completo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Conteúdo 4 - Case Imobiliário -->
+                <div class="portfolio-item fade-in" data-category="copywriting imoveis">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='38%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='17' font-weight='700'%3EImóvel de R$ 699mil%3C/text%3E%3Ctext x='50%25' y='48%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='14'%3EVendido em 27 Dias%3C/text%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='12'%3EApós 8 Meses Parado%3C/text%3E%3C/svg%3E" alt="Case Imobiliário - Venda em 27 dias">
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-primary btn-case-study" data-case="imovel-sp">Ver Case Completo</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Estratégia • Imóveis</span>
+                        <h3>Imóvel de alto padrão: de 8 meses parado para venda em 27 dias</h3>
+                        <p>Estratégia completa de tráfego pago e conteúdo para imóvel de R$ 699 mil parado há 8 meses. NAR (2024): 97% dos compradores de imóveis buscam online. Apenas 23% das imobiliárias usam tráfego pago estrategicamente.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">27</span>
+                                <span class="metric-label">Dias p/ Venda</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">R$699k</span>
+                                <span class="metric-label">Valor Imóvel</span>
+                            </div>
+                        </div>
+                        <button class="btn-case-study" data-case="imovel-sp">
+                            <i class="fas fa-chart-line"></i> Ver Case Completo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Conteúdo 5 - Artigo Blog Fintech -->
+                <div class="portfolio-item fade-in" data-category="copywriting blog financas">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='40%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='18' font-weight='700'%3EComo Sair das Dívidas%3C/text%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='14'%3Ee Limpar Seu Nome%3C/text%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='14'%3Eem 2025%3C/text%3E%3C/svg%3E" alt="Artigo Fintech - Como Sair das Dívidas">
+                        <div class="portfolio-overlay">
+                            <a href="https://49748638.hs-sites.com/blog/como-sair-das-d%C3%ADvidas-2025" target="_blank" class="btn btn-primary">Ler Artigo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Blog • Finanças</span>
+                        <h3>Como sair das dívidas e limpar seu nome em 2025</h3>
+                        <p>Artigo estratégico para fintech brasileira. Serasa (2024): 71 milhões de brasileiros inadimplentes (40% da população adulta). Dívida média: R$ 4.893. Busca por "limpar nome" cresceu 156% em 12 meses.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">5 min</span>
+                                <span class="metric-label">Tempo Leitura</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">42%</span>
+                                <span class="metric-label">Taxa Abertura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conteúdo 6 - Email marketing -->
+                <div class="portfolio-item fade-in" data-category="copywriting email">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='16' font-weight='600'%3ESequência de Emails%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='13'%3EAutomação de Vendas%3C/text%3E%3C/svg%3E" alt="Email Marketing">
+                        <div class="portfolio-overlay">
+                            <a href="https://49748638.hs-sites.com/blog/flujo-de-email-nurturing" target="_blank" class="btn btn-primary">Ver Fluxo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Email Marketing • Automação</span>
+                        <h3>Sequência de email marketing - Nutrição de leads para infoprodutos</h3>
+                        <p>Sequência de 3 emails automatizados para plataforma hispano-americana. Campaign Monitor (2024): email marketing tem ROI médio de 36:1. Taxa de abertura média no setor: 21,3%. Automação aumenta conversão em 451%.</p>
+                        <div class="portfolio-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">5 min</span>
+                                <span class="metric-label">Tempo de Leitura</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">38%</span>
+                                <span class="metric-label">Taxa Abertura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conteúdo 7 - Landing page alto ticket -->
+<div class="portfolio-item fade-in" data-category="copywriting">
+    <div class="portfolio-image">
+        <!-- Badge no topo da imagem -->
+        <div style="position: absolute; top: 15px; right: 15px; background: var(--accent-color); color: var(--primary-color); padding: 6px 15px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; z-index: 10; box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);">
+            📝 Exemplo de Copy
+        </div>
+        
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='16' font-weight='600'%3ELanding Page%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='13'%3EMentoria Executiva%3C/text%3E%3C/svg%3E" alt="Landing Page">
+        <div class="portfolio-overlay">
+            <a href="https://landing-exemplo-portfolio-pypu.vercel.app/" target="_blank" class="btn btn-primary">Ver Landing Page</a>
+        </div>
+    </div>
+    <div class="portfolio-content">
+        <span class="portfolio-category">Copywriting • Landing Page • Exemplo</span>
+        <h3>Landing Page - Mentoria executiva para líderes C-Level</h3>
+        <p><strong>Copy demonstrativa criada para showcase.</strong> Exemplo completo de landing page de alta conversão para mentoria executiva de alto ticket (R$ 15.000). Demonstra estrutura persuasiva, gatilhos mentais, prova social e técnicas avançadas de copywriting para produtos premium.</p>
+        
+        <div style="background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--accent-color); padding: 1rem; margin: 1rem 0; border-radius: 4px;">
+            <p style="margin: 0; font-size: 0.9rem; color: var(--text-light);">
+                <i class="fas fa-lightbulb" style="color: var(--accent-color);"></i> 
+                <strong>Página de exemplo</strong> desenvolvida para demonstrar qualidade de copy, estrutura de conversão e aplicação de gatilhos mentais em produtos de alto valor.
+            </p>
+        </div>
+        
+        <div class="portfolio-metrics">
+            <div class="metric-item">
+                <span class="metric-value">8 seções</span>
+                <span class="metric-label">Estrutura Completa</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-value">R$15k</span>
+                <span class="metric-label">Ticket Alto</span>
+            </div>
+        </div>
+    </div>
+</div>
+             <!-- Conteúdo 8 - Roteiros de Reels -->
+<div class="portfolio-item fade-in" data-category="copywriting social financas">
+    <div class="portfolio-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%232d2d2d'/%3E%3Ctext x='50%25' y='45%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='18' font-weight='700'%3ERoteiros de Reels%3C/text%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dy='.3em' fill='%23d4af37' font-family='Playfair Display' font-size='13'%3EFintech | Instagram%3C/text%3E%3C/svg%3E" alt="Roteiros de Reels Instagram para Fintech">
+        <div class="portfolio-overlay">
+            <a href="https://49748638.hs-sites.com/blog/roteiros-de-v%C3%ADdeo-%C3%A1rea-financeira" target="_blank" class="btn btn-primary">Ver Roteiros</a>
+        </div>
+    </div>
+    <div class="portfolio-content">
+        <span class="portfolio-category">Social Media • Finanças</span>
+        <h3>Roteiros de Reels para Fintech - Investimentos e FIIs</h3>
+        <p>2 roteiros estratégicos para Instagram Reels. Meta (2024): Reels têm 22% mais engajamento que posts estáticos. Conteúdo educacional financeiro gera 3x mais salvamentos. Vídeos curtos aumentam conversão em 85%.</p>
+        <div class="portfolio-metrics">
+            <div class="metric-item">
+                <span class="metric-value">62%</span>
+                <span class="metric-label">Retenção Média</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-value">4.8%</span>
+                <span class="metric-label">CTR no Link</span>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Entre em Contato</h2>
+            <p>Vamos conversar sobre como posso ajudar seu negócio a crescer</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>melinammpereda@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Telefone/WhatsApp</h4>
+                        <p>+55 48 99986 7086</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Localização</h4>
+                        <p>Porto Alegre, RS</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4>Disponibilidade</h4>
+                        <p>Segunda a Sexta, 9h às 18h</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FORMULÁRIO COM FORMSPREE -->
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xrbrzbed" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome Completo *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="service">Serviço de Interesse</label>
+                    <select id="service" name="service">
+                        <option value="">Selecione um serviço</option>
+                        <option value="copywriting">Copywriting</option>
+                        <option value="trafego">Tráfego Pago</option>
+                        <option value="estrategia">Estratégia de Conteúdo</option>
+                        <option value="social">Gestão de Redes Sociais</option>
+                        <option value="consultoria">Consultoria Completa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem *</label>
+                    <textarea id="message" name="message" required placeholder="Conte-me sobre seu projeto e objetivos..."></textarea>
+                </div>
+                
+                <!-- Campos ocultos do Formspree -->
+                <input type="hidden" name="_subject" value="🔥 Novo Lead do Portfólio - Melina Pereda">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                
+                <button type="submit" class="btn btn-primary" id="submit-btn">Enviar Mensagem</button>
+                <div class="form-status" id="form-status"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Melina Pereda</h3>
+                <p>Redatora Publicitária & Estrategista de Tráfego Pago</p>
+                <p>Transformando palavras em resultados mensuráveis há 12 anos.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/melinna-pereda-63b9a9336/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/melinnapereda/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100087678501984" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Serviços</h3>
+                <p><a href="#services">Copywriting PT/ES</a></p>
+                <p><a href="#services">Consultoria e mentoria</a></p>
+                <p><a href="#services">Gestão de tráfego pago</a></p>
+                <p><a href="#services">Estratégia de conteúdo</a></p>
+                <p><a href="#services">Gestão de redes sociais</a></p>
+                <p><a href="#services">Email marketing</a></p>
+                <p><a href="#services">Produção de materiais nacionais e internacionais</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> melinammpereda@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +55 48 99986 7086</p>
+                <p><i class="fas fa-map-marker-alt"></i> Porto Alegre, RS</p>
+                <p><i class="fas fa-clock"></i> Seg-Sex: 9h-18h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Melina Pereda. Todos os direitos reservados. | Inteligência digital com foco em conversão para o mercado brasileiro e hispano.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5548999867086?text=Olá%20Melina!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal Case Study -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 style="margin: 0; color: var(--accent-color);">Case Study</h3>
+                <button class="modal-close" id="modal-close" aria-label="Fechar modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content-case">
+                <!-- Conteúdo será inserido dinamicamente -->
+            </div>
+        </div>
+    </div>
+<!-- Script JavaScript -->
+    <script>
+        // ==========================================
+        // NAVEGAÇÃO E MENU MOBILE
+        // ==========================================
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Toggle do menu mobile
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // ==========================================
+        // NAVEGAÇÃO SUAVE
+        // ==========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#contact' || href === '#services' || href === '#portfolio' || href === '#about' || href === '#home') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // ==========================================
+        // HEADER SCROLLADO
+        // ==========================================
+        const navbar = document.querySelector('.navbar');
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                if (scrollIndicator) scrollIndicator.style.opacity = '0';
+            } else {
+                navbar.classList.remove('scrolled');
+                if (scrollIndicator) scrollIndicator.style.opacity = '1';
+            }
+        });
+
+        // ==========================================
+        // ANIMAÇÕES AO SCROLL
+        // ==========================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animação específica para contadores
+                    if (entry.target.classList.contains('counter-item')) {
+                        animateCounter(entry.target);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos
+        document.querySelectorAll('.fade-in, .counter-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ==========================================
+        // ANIMAÇÃO DE CONTADORES
+        // ==========================================
+        function animateCounter(element) {
+            const counterNumber = element.querySelector('.counter-number');
+            if (!counterNumber || counterNumber.classList.contains('animated')) return;
+            
+            counterNumber.classList.add('animated');
+            const target = parseInt(counterNumber.getAttribute('data-target'));
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+            
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    counterNumber.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counterNumber.textContent = target;
+                }
+            };
+            
+            updateCounter();
+        }
+
+        // ==========================================
+        // FILTRO DE PORTFÓLIO
+        // ==========================================
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover classe active de todos os botões
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Adicionar classe active ao botão clicado
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    const categories = item.getAttribute('data-category').split(' ');
+                    
+                    if (filter === 'all' || categories.includes(filter)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // ==========================================
+        // MODAL CASE STUDY - DADOS
+        // ==========================================
+        const caseStudies = {
+            'abdominoplastia': {
+                title: 'Case: Abdominoplastia Pós-Bariátrica - Clínica de Cirurgia Plástica',
+                challenge: 'Clínica de cirurgia plástica precisava atrair pacientes pós-bariátricos com abordagem sensível e que gerasse confiança, em um mercado onde 78% dos pacientes buscam informações online antes de agendar consulta (SBCP, 2024).',
+                strategy: [
+                    'Copywriting empático focado em transformação e autoestima',
+                    'Prova social com depoimentos reais e resultados mensuráveis',
+                    'CTA direcionado para consulta gratuita (redução de barreira de entrada)',
+                    'Otimização SEO para "abdominoplastia pós-bariátrica" (volume de busca: 1.300/mês)',
+                    'Storytelling baseado em jornada do paciente (antes, durante, depois)'
+                ],
+                results: [
+                    { value: '4.2%', label: 'Taxa de Conversão' },
+                    { value: '78%', label: 'Taxa de Leitura Completa' },
+                    { value: '35+', label: 'Consultas Agendadas/Mês' },
+                    { value: '187%', label: 'ROI em 6 Meses' }
+                ],
+                impact: {
+                    investment: 'R$ 8.500 em criação de conteúdo + tráfego pago',
+                    return: 'R$ 24.400 em faturamento direto atribuído (6 meses)',
+                    ticket: 'R$ 18.000 por procedimento',
+                    cpa: 'R$ 243 (média do setor: R$ 420)'
+                }
+            },
+            'imovel-sp': {
+                title: 'Case: Imóvel de médio padrão - Zona Sul - São Paulo/SP',
+                challenge: 'Imóvel de R$ 699.000 estava parado há 8 meses na carteira da corretora Solange, de São Paulo. O proprietário estava prestes a retirar o imóvel da imobiliária. Segundo pesquisa NAR (2024), 97% dos compradores iniciam a busca por imóveis online, mas apenas 23% das imobiliárias brasileiras utilizam estratégias de tráfego pago. A média nacional de tempo para venda de imóveis de médio padrão em 2024 é de 90/180 dias (DataZap).',
+                strategy: [
+                    'Desenvolvimento de estratégia completa de tráfego pago segmentado para público-alvo de media/alta renda na região',
+                    'Criação de anúncios persuasivos destacando diferenciais do imóvel, localização premium e estilo de vida',
+                    'Implementação de funil de captação com landing page exclusiva e formulário de qualificação de leads',
+                    'Remarketing estratégico para visitantes interessados com diferentes abordagens',
+                    'Otimização diária de campanhas baseada em comportamento do usuário e métricas de conversão',
+                    'Estratégia exclusiva Meta Ads para cobertura do público-alvo'
+                ],
+                results: [
+                    { value: '27', label: 'Dias para Venda' },
+                    { value: '8', label: 'Meses Parado' },
+                    { value: 'R$699k', label: 'Valor Integral' },
+                    { value: '85%', label: 'Redução Tempo' }
+                ],
+                impact: {
+                    investment: 'R$ 790 em tráfego pago + R$ 1.500 em estratégia e conteúdo',
+                    return: 'Venda concretizada em 27 dias (85% mais rápido que a média nacional)',
+                    ticket: 'R$ 699.000 - imóvel vendido pelo valor integral sem negociação',
+                    cpa: 'Corretora manteve cliente satisfeito e evitou perda de comissão de R$ 20.970 (3% sobre valor)'
+                }
+            }
+        };
+
+        // ==========================================
+        // MODAL CASE STUDY - FUNÇÕES
+        // ==========================================
+        function openModal(caseId) {
+            const caseData = caseStudies[caseId];
+            
+            if (!caseData) {
+                console.error('Case não encontrado:', caseId);
+                return;
+            }
+            
+            const modalContent = document.querySelector('.modal-content-case');
+            const modalOverlay = document.getElementById('modal-overlay');
+            
+            if (!modalContent || !modalOverlay) {
+                console.error('Elementos do modal não encontrados');
+                return;
+            }
+            
+            modalContent.innerHTML = `
+                <h2>${caseData.title}</h2>
+                
+                <div class="case-section">
+                    <h3>🎯 Desafio</h3>
+                    <p>${caseData.challenge}</p>
+                </div>
+
+                <div class="case-section">
+                    <h3>💡 Estratégia</h3>
+                    <ul>
+                        ${caseData.strategy.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h3>📊 Resultados</h3>
+                    <div class="results-grid">
+                        ${caseData.results.map(result => `
+                            <div class="result-item">
+                                <span class="result-number">${result.value}</span>
+                                <span class="result-label">${result.label}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="case-section">
+                    <h3>💰 Impacto no Negócio</h3>
+                    <p><strong>Investimento:</strong> ${caseData.impact.investment}</p>
+                    <p><strong>Retorno:</strong> ${caseData.impact.return}</p>
+                    <p><strong>Ticket:</strong> ${caseData.impact.ticket}</p>
+                    <p><strong>Resultado adicional:</strong> ${caseData.impact.cpa}</p>
+                </div>
+            `;
+            
+            modalOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modalOverlay = document.getElementById('modal-overlay');
+            if (modalOverlay) {
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // ==========================================
+        // EVENT LISTENERS PARA MODAIS
+        // ==========================================
+        document.addEventListener('click', function(e) {
+            // Verificar se clicou em um botão de case study
+            if (e.target.classList.contains('btn-case-study') || e.target.closest('.btn-case-study')) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const button = e.target.classList.contains('btn-case-study') ? e.target : e.target.closest('.btn-case-study');
+                const caseId = button.getAttribute('data-case');
+                
+                if (caseId) {
+                    openModal(caseId);
+                }
+            }
+            
+            // Fechar ao clicar no botão X
+            if (e.target.id === 'modal-close' || e.target.closest('#modal-close')) {
+                e.preventDefault();
+                closeModal();
+            }
+            
+            // Fechar ao clicar fora do modal
+            if (e.target.id === 'modal-overlay') {
+                closeModal();
+            }
+        });
+
+        // Fechar modal com ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // ==========================================
+// FORMULÁRIO DE CONTATO COM FORMSPREE
+// ==========================================
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+const submitBtn = document.getElementById('submit-btn');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Desabilitar botão durante envio
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+        
+        const formData = new FormData(contactForm);
+        
+        try {
+            // Enviar para Formspree
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                showFormStatus('✅ Mensagem enviada com sucesso! Retornarei em breve.', 'success');
+                contactForm.reset();
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    showFormStatus('❌ ' + data.errors.map(error => error.message).join(', '), 'error');
+                } else {
+                    showFormStatus('❌ Erro ao enviar. Tente novamente.', 'error');
+                }
+            }
+        } catch (error) {
+            console.error('Erro:', error);
+            showFormStatus('❌ Erro de conexão. Verifique sua internet e tente novamente.', 'error');
+        } finally {
+            // Reabilitar botão
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Enviar Mensagem';
+        }
+    });
+}
+
+function showFormStatus(message, type) {
+    if (formStatus) {
+        formStatus.textContent = message;
+        formStatus.className = `form-status ${type}`;
+        formStatus.style.display = 'block';
+        
+        if (type !== 'loading') {
+            setTimeout(() => {
+                formStatus.style.display = 'none';
+            }, 5000);
+        }
+    }
+}
+
+        // ==========================================
+        // INDICADOR DE SCROLL PROGRESSIVO
+        // ==========================================
+        const progressBar = document.createElement('div');
+        progressBar.className = 'scroll-progress';
+        document.body.appendChild(progressBar);
+
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // ==========================================
+        // VOLTAR AO TOPO
+        // ==========================================
+        const backToTopButton = document.getElementById('backToTop');
+
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // ==========================================
+        // INICIALIZAÇÃO
+        // ==========================================
+        console.log('Portfolio de Melina Pereda carregado com sucesso!');
+        console.log('Botões de case study encontrados:', document.querySelectorAll('.btn-case-study').length);
+    </script>
+</body>
+</html>
